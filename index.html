@@ -26,10 +26,10 @@
         <div class="result">
             <div class="result__title field-title">Generated Password</div>
             <div class="result__info right">click to copy</div>
-            <div class="result__info left">copied</div>
-            <div class="result__viewbox" id="result">CLICK GENERATE</div>
+            <div id="result" class="result__viewbox">CLICK GENERATE</div> <!-- Elemento añadido -->
             <button id="copy-btn" style="--x: 0; --y: 0"><i class="far fa-copy"></i></button>
         </div>
+        
         <div class="length range__slider" data-min="4" data-max="32">
             <div class="length__title field-title" data-length='0'>length:</div>
             <input id="slider" type="range" min="4" max="32" value="16" />
@@ -58,7 +58,7 @@
         <button class="btn generate" id="generate">Generate Password</button>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./js/js.js"></script>
 </body>
 
 </html>
