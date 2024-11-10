@@ -1,0 +1,34 @@
+pipeline{
+
+    agent {
+        docker {
+            image 'node:18.17.1-alpine3.18'
+        }
+    }
+
+  stages{
+        stage('Building'){
+            steps{
+            echo 'This is Building.'
+            }
+        } 
+
+         stage('Testing'){
+            steps{
+echo 'This is testing.'
+            }
+        }
+
+        stage('Staging'){
+            steps{
+            echo 'This is Staging.'
+            }
+        }
+
+        stage('Production'){
+            steps{
+            echo 'This is Production.'
+            }
+        }
+    }
+}
